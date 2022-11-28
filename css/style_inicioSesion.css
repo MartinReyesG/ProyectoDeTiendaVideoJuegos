@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: /* "Oswald" */ fuenteTitulo;
+  letter-spacing: 2px;
+}
+@font-face {
+  font-family: fuenteTitulo;
+  src: url(../fuentes/Doctor\ Drake.ttf);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/monitor.jpg) center center fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cerrarSesion {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin: 20px 20px 0 0;
+  border: none;
+  border-radius: 20px;
+  display: none;
+  font-size: 12px;
+}
+.cerrarSesion:hover {
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+
+.container-sesion {
+  background: rgba(255, 255, 255, 0.3);
+  width: 400px;
+  height: 600px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+.titulo {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.img {
+  width: 90px;
+  height: 90px;
+  background: url(../img/usuario.png) center center;
+  background-size: cover;
+  margin-top: 10px;
+
+
+
+
+
+
+
+  
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container-sesion form {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.container-sesion label {
+  margin: 20px 0 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.container-sesion input[type="text"],
+input[type="password"] {
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-family: monospace;
+  font-size: 18px;
+  letter-spacing: 2px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+}
+.container-sesion input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 1px;
+}
+.container-sesion form > input[type="submit"] {
+  background: #000;
+  color: #fff;
+  margin-top: 20px;
+  width: 70%;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+}
+.container-sesion input[type="submit"]:hover {
+  transition: 0.3s;
+  background: #fff;
+  color: #000;
+}
+
+.cuenta {
+  width: 80%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.cuenta a {
+  display: inline-block;
+  margin: 10px 0 15px 15px;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.cuenta a:hover {
+  transition: 0.3s;
+  letter-spacing: 0.6px;
+}

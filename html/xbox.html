@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xbox</title>
+
+    <link rel="stylesheet" href="../css/style_xbox.css" />
+    <link rel="icon" href="../img/blanco.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <a href="inicioSesion.html">
+      <h3 class="inicio" id="inicio">Iniciar Sesion</h3>
+    </a>
+    <input
+      type="button"
+      value="Cerrar Sesion"
+      onclick="cerrar()"
+      class="cerrarSesion"
+      id="cerrarSesion"
+    />
+    <div class="modal-container" id="modal-container">
+      <div id="modal" class="modal main-div main-div2">
+        <div id="titulo" class="tituloModal"></div>
+        <div class="imagenModal">
+          <img id="imgPrincipal" alt="" />
+        </div>
+        <div class="content_info">
+          <label class="precioModal" id="precioModal"></label>
+          <p class="informacionModal" id="informacionModal"></p>
+          <button class="btncomprar" onclick="paginaPago()">COMPRAR</button>
+        </div>
+        <div class="carruselModal" id="carruselModal">
+          <img class="imagenGamePlayModal" id="imagenGamePlayModal"/>
+        </div>
+        <button class="botonModal" onclick="cerrarModal()">
+          X
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </button>
+      </div>
+    </div>
+
+    <!--     <audio autoplay src="../palrey.mp3"></audio> -->
+    <header id="header-container">
+      <img src="../img/xbox-logo.png" alt="" />
+      <h1>CHOMPI ENTERPRISE 2.0</h1>
+      <nav>
+        <a href="index.html" class="navegador">
+          Tienda
+          <i class="fa-solid fa-house-user"></i>
+        </a>
+        <a href="xbox.html" class="navegador">
+          Juegos XBOX
+          <i class="fa-brands fa-xbox"></i>
+        </a>
+        <a href="psn.html" class="navegador">
+          Juegos PSN
+          <i class="fa-brands fa-playstation"></i>
+        </a>
+        <a href="nintendo.html" class="navegador">
+          Nintendo
+          <i class="fa-solid fa-gamepad"></i>
+        </a>
+        <a href="#foo" class="navegador">
+          Sobre nosotros
+          <i class="fa-solid fa-person"></i>
+        </a>
+      </nav>
+    </header>
+
+    <div class="carrusel">
+      <div class="carrusel-items">
+        <div class="carrusel-item">
+          <img src="../img/xbox/1.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/xbox/2.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/xbox/3.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/xbox/4.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/xbox/4.png" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/xbox/5.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/xbox/6.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/xbox/halo_infinite.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/1.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(1)">
+        <img src="../img/xbox/2.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(2)">
+        <img src="../img/xbox/3.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(3)">
+        <img src="../img/xbox/4.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/4.png" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/5.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/6.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/halo_infinite.jpg" alt="" />
+        <div>
+          <a href="pago.html"><input type="button" value="Comprar" /></a>
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/7.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/8.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/9.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/10.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/11.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/12.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/13.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal(0)">
+        <img src="../img/xbox/14.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+    </main>
+
+    <footer id="foo">
+      <div class="footer-container">
+        <div class="content-foo">
+          <h4>Congratulation</h4>
+          <p>Post Malon</p>
+        </div>
+        <div class="content-foo">
+          <h4>Smoth Criminal</h4>
+          <p>Michael Jackson</p>
+        </div>
+        <div class="content-foo">
+          <h4>Chlorine</h4>
+          <p>Twenty One Pistols</p>
+        </div>
+      </div>
+      <h2 class="titulo-final">
+        &copy; Instituto Tecnologico Superior del Sur de Guanajuato
+      </h2>
+    </footer>
+
+    <script src="../javascript/inicioSesion.js"></script>
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e15c8d3476.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

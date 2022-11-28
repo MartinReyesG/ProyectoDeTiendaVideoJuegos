@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: /* "Oswald" */ fuenteTitulo;
+  letter-spacing: 2px;
+}
+@font-face {
+  font-family: fuenteTitulo;
+  src: url(../fuentes/Doctor\ Drake.ttf);
+}
+/* 
+    XBOX
+    #ffffff
+    #77bb44
+    #2ca243
+    #107c10
+    #000000
+
+    PSN
+    #1e5ddb
+    #5cc9fb
+    #182580
+    #526879
+    #aebfd4
+    #2e393d
+
+    PSN OLD
+    #df0024
+    #f3c300
+    #00ac9f
+    #2e6db4
+
+    NINTENDO
+    #0d0c0c
+    #dd2020
+    #a5a2a2
+    #dedede
+    #ffffff
+*/
+.inicio {
+  background: none;
+  color: #0d0d0d;
+  display: inline;
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px 20px 0 0;
+  cursor: pointer;
+}
+.inicio:hover {
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #0ba0f7;
+}
+.cerrarSesion {
+  background: #000000;
+  color: #f2f2f2;
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  margin: 2px 20px 0 0;
+  border: none;
+  border-radius: 20px;
+  display: none;
+  font-size: 12px;
+}
+.cerrarSesion:hover {
+  transition: .3s;
+  transform: scale(1.02);
+}
+#header-container {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+#header-container img {
+  width: 500px;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+#header-container nav {
+  display: block;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  padding: 20px;
+}
+nav > .navegador {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  text-align: center;
+  color: #117911;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 18px;
+  border-radius: 8px;
+}
+nav > .navegador:hover {
+  background: #117911;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+  box-shadow: 5px 5px 10px rgba(17, 121, 17, 0.708),
+    -2px -2px 10px rgba(17, 121, 17, 0.708);
+}
+#header-container h1 {
+  color: #117911;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* CARRUSEL */
+
+.carrusel {
+  display: flex;
+  background: #117911;
+  box-shadow: 2px 2px 10px 5px #117911;
+}
+.carrusel-items {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 30px 0px;
+}
+.carrusel-item {
+  min-width: 250px;
+  max-width: 500px;
+  height: 350px;
+  outline: 1px solid #000;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.carrusel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carrusel-item:hover {
+  transform: scale(1.1);
+}
+
+/* MAIN */
+
+main {
+  background: #f2f2ff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0 0 20px 0;
+}
+.container-info {
+  width: 190px;
+  height: 280px;
+  display: flex;
+  margin: 30px 10px 5px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid #fff;
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.container-info:hover {
+  transition: 0.3s;
+  transform: scale(1.5);
+  box-shadow: 
+  0 0 10px #117911,
+  0 0 20px #117911,
+  0 0 40px #117911,
+  0 0 80px #117911,
+  0 0 160px #117911;
+}
+.container-info:hover input {
+  background: #000;
+  color: #f2f2f2;
+}
+.container-info img {
+  width: 100%;
+  height: 90%;
+  transition: 0.3s;
+}
+.container-info img:hover {
+  transition: 0.3s;
+  transform: scale(1.03);
+}
+.container-info div {
+  width: 100%;
+  height: 30px;
+}
+.container-info input {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  background: #fff;
+  color: #117911;
+  border: none;
+  transition: 0.3s;
+}
+
+/* MODAL */
+
+.modal-container {
+  display: flex;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  display: none; 
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+}
+.modal {
+  width: 70%;
+  height: 500px;
+  display: grid;
+  background: #000000;
+  box-shadow: 
+  0 0 10px #000000,
+  0 0 20px #000000,
+  0 0 40px #000000,
+  0 0 80px #000000,
+  0 0 160px #000000;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  'n1 n2 n2'
+  'n1 n6 n6'
+  'n4 n6 n6'
+  'n4 n6 n6';
+  border-radius: 10px;
+}
+.imagenModal{
+  width: 100%;
+  height: 100%;
+  grid-area: n1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagenModal img {
+  width: 180px;
+  border-radius: 10px;
+}
+.botonModal {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: none;
+  color: #f2f2f2;
+  width: 45px;
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+  transition: .3s ease;
+  font-size: 18PX;
+  font-family: monospace;
+
+  /* background: linear-gradient(
+    to right, 
+    #69d2cd,
+    #b9f1d6);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; */
+}
+.botonModal:hover {
+  transition: .3s ease;
+  box-shadow: 0 0 10px red;
+  background: red;
+}
+.tituloModal{
+  width: 90%;
+  height: 100%;
+  grid-area: n2;
+  margin-left: 32px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f2f2;
+  font-family: fuenteTitulo;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+.content_info {
+  grid-area: n4;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.informacionModal{  
+  width: 95%;
+  padding: 3px 8px 5px 8px;
+  text-align: center;
+  color: #f2f2f2;
+  font-weight: 100;
+  font-size: 13px;
+}
+.precioModal{
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 30px;
+  background: #117911;
+  color: #f2f2f2;
+  line-height: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+}
+.imagenGamePlayModal{
+  height: 330px;
+  border-radius: 10px;
+  outline: 2px solid #efefef;
+}
+.btncomprar {
+  background: #117911;
+  color: #f2f2f2;
+  font-size: 15px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  transition: .3s;
+  margin-top: 10px;
+}
+.btncomprar:hover {
+  transition: .3s;
+  transform: scale(1.03);
+  box-shadow: 0 0 3px #f2f2f2;
+}
+.carruselModal{
+  grid-area: n6;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto; 
+}
+.carruselModal > img{
+  position: absolute;
+}
+@keyframes aparecer {
+    0% {
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(0.1);
+    }
+    20% {
+        transform: scale(0.2);
+    }
+    30% {
+        transform: scale(0.3);
+    }
+    40% {
+        transform: scale(0.4);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    60% {
+        transform: scale(0.6);
+    }
+    70% {
+        transform: scale(0.7);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+} 
+@keyframes desaparecer {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    20% {
+        transform: scale(0.8);
+    }
+    30% {
+        transform: scale(0.7);
+    }
+    40% {
+        transform: scale(0.6);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    60% {
+        transform: scale(0.4);
+    }
+    70% {
+        transform: scale(0.3);
+    }
+    80% {
+        transform: scale(0.2);
+    }
+    90% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* FOOTER */
+
+#foo {
+  background: #fff;
+  justify-content: center;
+  box-shadow: 2px 2px 10px 5px #fff;
+}
+.footer-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  text-align: center;
+  border-bottom: 2px solid #117911;
+}
+.content-foo h4 {
+  color: #117911;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #117911;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.content-foo p {
+  color: #117911;
+  padding-bottom: 20px;
+}
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  color: #117911;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

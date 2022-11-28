@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principal</title>
+
+    <link rel="stylesheet" href="../css/style_index.css" />
+    <link rel="icon" href="../img/blanco.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="header-container">
+      <a href="inicioSesion.html">
+        <h3 class="inicio" id="inicio">Iniciar Sesion</h3>
+      </a>
+      <input
+        type="button"
+        value="Cerrar Sesion"
+        onclick="cerrar()"
+        class="cerrarSesion"
+        id="cerrarSesion"
+      />
+      <img src="../img/logo.png" alt="" />
+      <h1>CHOMPI ENTERPRISE 2.0</h1>
+      <nav>
+        <a href="index.html" class="navegador">
+          Tienda
+          <i class="fa-solid fa-house-user"></i>
+        </a>
+        <a href="xbox.html" class="navegador">
+          Juegos XBOX
+          <i class="fa-brands fa-xbox"></i>
+        </a>
+        <a href="psn.html" class="navegador">
+          Juegos PSN
+          <i class="fa-brands fa-playstation"></i>
+        </a>
+        <a href="nintendo.html" class="navegador">
+          Nintendo
+          <i class="fa-solid fa-gamepad"></i>
+        </a>
+        <a href="../php/admin.php" class="navegador">
+          Usuarios
+          <i class="fa-regular fa-user-secret"></i>
+        </a>
+        <a href="#foo" class="navegador">
+          Sobre nosotros
+          <i class="fa-solid fa-person"></i>
+        </a>
+      </nav>
+    </header>
+
+    <a href="#foo" class="navegador" id="contador"></a> 
+
+    <div class="carrusel">
+      <div class="container-all">
+        <div class="container-carrusel">
+          <figure><img src="../img/psn/1.jpg" /></figure>
+          <figure><img src="../img/xbox/4.jpg" /></figure>
+          <figure><img src="../img/psn/4.jpg" /></figure>
+          <figure><img src="../img/xbox/2.jpg" /></figure>
+          <figure><img src="../img/psn/2.jfif" /></figure>
+          <figure><img src="../img/xbox/6.jpg" /></figure>
+          <figure><img src="../img/psn/6.jpg" /></figure>
+          <figure><img src="../img/xbox/8.jpg" /></figure>
+          <figure><img src="../img/psn/3.jpg" /></figure>
+          <figure><img src="../img/xbox/1.jpg" /></figure>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-container">
+      <section class="container-info">
+        <article>
+          <section class="article-img halo">
+            <a href="#halo-img1"
+              ><img src="../img/xbox/halo_infinite.jpg" alt=""
+            /></a>
+          </section>
+          <section class="article-container">
+            <header>
+              <h2>VideoJuego con mayores VENTAS</h2>
+            </header>
+            <p>
+              Resumen Halo Infinite es un juego sumamente divertido el cual ha
+              sabido llevar bien la responsabilidad que tiene al lograr el
+              perfecto balance entre lo clásico y lo nuevo, a su vez que ese
+              mismo balance se ve reflejado en su apartado multijugador. Tags
+              343 Industries Halo Infinite Xbox Xbox Game Pass Xbox Series S/X.
+            </p>
+            <footer>
+              <div class="article-footer-cont">
+                <a href="#">Conocer más</a>
+              </div>
+            </footer>
+          </section>
+        </article>
+        <article>
+          <section class="article-img godofwar">
+            <a href="#gow-img1"><img src="../img/psn/godofwar.png" alt="" /></a>
+          </section>
+          <section class="article-container">
+            <header>
+              <h2>VideoJuego de la SEMANA</h2>
+            </header>
+            <p>
+              Siempre es interesante ver la evolución de los personajes dentro
+              de una historia. Villanos buscando redención, personajes que
+              cometieron un error y buscan enmendarlo, protagonistas siguiendo
+              el camino del héroe o calvos super enojados asesinando dioses a
+              diestra y siniestra.
+            </p>
+            <footer>
+              <div class="article-footer-cont">
+                <a href="#">Conocer más</a>
+              </div>
+            </footer>
+          </section>
+        </article>
+        <article>
+          <section class="article-img lastus">
+            <a href="#lou-img1"><img src="../img/psn/lastus.jpg" alt="" /></a>
+          </section>
+          <section class="article-container">
+            <header>
+              <h2>VideoJuego más POLEMICO</h2>
+            </header>
+            <p>
+              Como juego de acción, The Last of Us Part 2 es fantástico. Los
+              enfrentamientos en The Last of Us Part 2 son más prolijos que la
+              primera entrega. Se nota un mejor equilibrio en las
+              características de las armas, así como un aumento de la variedad,
+              los usos y las mejoras.
+            </p>
+            <footer>
+              <div class="article-footer-cont">
+                <a href="#">Conocer más</a>
+              </div>
+            </footer>
+          </section>
+        </article>
+      </section>
+
+      <div class="halo">
+        <div class="modal" id="halo-img1">
+          <h1>HALO INFINITE</h1>
+          <div class="imagen">
+            <a href="#halo-img4">&lt;</a>
+            <a href="#halo-img2"><img src="../img-halo/h1.jpg" alt="" /></a>
+            <a href="#halo-img2">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+        <div class="modal" id="halo-img2">
+          <h1>HALO INFINITE</h1>
+          <div class="imagen">
+            <a href="#halo-img1">&lt;</a>
+            <a href="#halo-img3"><img src="../img-halo/h2.jpg" alt="" /></a>
+            <a href="#halo-img3">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+        <div class="modal" id="halo-img3">
+          <h1>HALO INFINITE</h1>
+          <div class="imagen">
+            <a href="#halo-img2">&lt;</a>
+            <a href="#halo-img4"><img src="../img-halo/h3.jpg" alt="" /></a>
+            <a href="#halo-img4">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+        <div class="modal" id="halo-img4">
+          <h1>HALO INFINITE</h1>
+          <div class="imagen">
+            <a href="#halo-img3">&lt;</a>
+            <a href="#halo-img1"><img src="../img-halo/h4.jpg" alt="" /></a>
+            <a href="#halo-img1">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gow">
+        <div class="modal" id="gow-img1">
+          <h1>GOD OF WAR</h1>
+          <div class="imagen">
+            <a href="#gow-img4">&lt;</a>
+            <a href="#gow-img2"><img src="../img-gof/g1.jpg" alt="" /></a>
+            <a href="#gow-img2">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+        <div class="modal" id="gow-img2">
+          <h1>GOD OF WAR</h1>
+          <div class="imagen">
+            <a href="#gow-img1">&lt;</a>
+            <a href="#gow-img3"><img src="../img-gof/g2.jpg" alt="" /></a>
+            <a href="#gow-img3">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+        <div class="modal" id="gow-img3">
+          <h1>GOD OF WAR</h1>
+          <div class="imagen">
+            <a href="#gow-img2">&lt;</a>
+            <a href="#gow-img4"><img src="../img-gof/g3.jpg" alt="" /></a>
+            <a href="#gow-img4">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+        <div class="modal" id="gow-img4">
+          <h1>GOD OF WAR</h1>
+          <div class="imagen">
+            <a href="#gow-img3">&lt;</a>
+            <a href="#gow-img1"><img src="../img-gof/g4.jpg" alt="" /></a>
+            <a href="#gow-img1">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="lou">
+        <div class="modal" id="lou-img1">
+          <h1>THE LAST OF US</h1>
+          <div class="imagen">
+            <a href="#lou-img4">&lt;</a>
+            <a href="#lou-img2"><img src="../img-los/l1.jpg" alt="" /></a>
+            <a href="#lou-img2">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+        <div class="modal" id="lou-img2">
+          <h1>THE LAST OF US</h1>
+          <div class="imagen">
+            <a href="#lou-img1">&lt;</a>
+            <a href="#lou-img3"><img src="../img-los/l2.jpg" alt="" /></a>
+            <a href="#lou-img3">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+        <div class="modal" id="lou-img3">
+          <h1>THE LAST OF US</h1>
+          <div class="imagen">
+            <a href="#lou-img3">&lt;</a>
+            <a href="#lou-img4"><img src="../img-los/l3.jpg" alt="" /></a>
+            <a href="#lou-img4">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+        <div class="modal" id="lou-img4">
+          <h1>THE LAST OF US</h1>
+          <div class="imagen">
+            <a href="#lou-img3">&lt;</a>
+            <a href="#lou-img1"><img src="../img-los/l4.jpg" alt="" /></a>
+            <a href="#lou-img1">></a>
+          </div>
+          <div class="cerrar">
+            <a href="#prueba5.html">x</a>
+          </div>
+        </div>
+      </div>
+
+      <section class="aside">
+        <aside>
+          <h2>¡OFERTAS!</h2>
+          <div class="gif">
+            <img src="../doncamaron.jpg" alt="" />
+          </div>
+          <p>
+            En don Camaron, tenemos el lugar donde podras encontrar menus para
+            parejas o familias.
+          </p>
+        </aside>
+
+        <aside>
+          <h2>¡OFERTAS!</h2>
+          <div class="gif">
+            <img src="../doncamaron.jpg" alt="" />
+          </div>
+          <p>
+            En don Camaron, tenemos el lugar donde podras encontrar menus para
+            parejas o familias.
+          </p>
+        </aside>
+      </section>
+    </main>
+
+    <footer id="foo">
+      <div class="footer-container">
+        <div class="content-foo">
+          <h4>Congratulation</h4>
+          <p>Post Malon</p>
+        </div>
+        <div class="content-foo">
+          <h4>Smoth Criminal</h4>
+          <p>Michael Jackson</p>
+        </div>
+        <div class="content-foo">
+          <h4>Chlorine</h4>
+          <p>Twenty One Pistols</p>
+        </div>
+      </div>
+      <h2 class="titulo-final">
+        &copy; Instituto Tecnologico Superior del Sur de Guanajuato
+      </h2>
+    </footer>
+
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/inicioSesion.js"></script>
+    <script src="../javascript/visitas.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e15c8d3476.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

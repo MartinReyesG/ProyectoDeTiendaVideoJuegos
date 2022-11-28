@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesion</title>
+
+    <link rel="stylesheet" href="../css/style_inicioSesion.css" />
+    <link rel="icon" href="../img/blanco.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <input type="button" value="Cerrar Sesion" onclick="cerrar()" class="cerrarSesion" id="cerrarSesion">
+      <div class="container-sesion">
+        <h1 class="titulo" id="inicio">Inicia sesión aquí</h1>
+        <div class="img"></div>
+        <form
+        action="../php/inicioSesion.php"
+        method="POST">
+          <label for="usuario">
+            Usuario 
+            <i class="fa-solid fa-user"></i>
+          </label>
+          <input type="text" placeholder="Ingresar Usuario" id="user" name="user"/>
+          <label for="contraseña">
+            Contraseña 
+            <i class="fa-solid fa-key"></i>
+          </label>
+          <input type="password" placeholder="Ingresar Contraseña" id="pass" name="pass"/>
+          <input type="submit" value="Iniciar"> <!-- onclick="login()" -->
+        </form>
+        <div class="cuenta">
+            <a href="#">No recuerdas la contraseña?</a>
+            <a href="registro.html">No tienes una cuenta?</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="../javascript/inicioSesion.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e15c8d3476.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

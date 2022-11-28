@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Station</title>
+
+    <link rel="stylesheet" href="../css/style_psn.css" />
+    <link rel="icon" href="../img/blanco.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="inicioSesion.html">
+      <h3 class="inicio" id="inicio">Iniciar Sesion</h3>
+    </a>
+    <input
+      type="button"
+      value="Cerrar Sesion"
+      onclick="cerrar()"
+      class="cerrarSesion"
+      id="cerrarSesion"
+    />
+    <div class="modal-container" id="modal-container">
+      <div id="modal" class="modal main-div main-div2">
+        <div id="titulo" class="tituloModal">Sea of thieves</div>
+        <div class="imagenModal">
+          <img src="../img/xbox/1.jpg" alt="" />
+        </div>
+        <div class="content_info">
+          <label class="precioModal"> $2,000 </label>
+          <p class="informacionModal">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            consequuntur delectus dolorum iste incidunt, odio hic esse vero sint
+            ullam expedita odit atque, harum quibusdam? Voluptatibus,
+            cupiditate! Hic, voluptates voluptatibus.
+          </p>
+          <button class="btncomprar">COMPRAR</button>
+        </div>
+        <div class="carruselModal">
+          <img class="imagenGamePlayModal" src="../img-halo/h1.jpg" />
+          <img class="imagenGamePlayModal" src="../img-halo/h2.jpg" />
+          <img class="imagenGamePlayModal" src="../img-halo/h3.jpg" />
+          <img class="imagenGamePlayModal" src="../img-halo/h4.jpg" />
+        </div>
+        <input
+          class="botonModal"
+          type="button"
+          onclick="cerrarModal()"
+          value="X"
+        />
+      </div>
+    </div>
+    <header id="header-container">
+      <img src="../img/psn-logo.png" alt="" />
+      <h1>CHOMPI ENTERPRISE 2.0</h1>
+      <nav>
+        <a href="index.html" class="navegador">
+          Tienda
+          <i class="fa-solid fa-house-user"></i>
+        </a>
+        <a href="xbox.html" class="navegador">
+          Juegos XBOX
+          <i class="fa-brands fa-xbox"></i>
+        </a>
+        <a href="psn.html" class="navegador">
+          Juegos PSN
+          <i class="fa-brands fa-playstation"></i>
+        </a>
+        <a href="nintendo.html" class="navegador">
+          Nintendo
+          <i class="fa-solid fa-gamepad"></i>
+        </a>
+        <a href="#foo" class="navegador">
+          Sobre nosotros
+          <i class="fa-solid fa-person"></i>
+        </a>
+      </nav>
+    </header>
+
+    <div class="carrusel">
+      <div class="carrusel-items">
+        <div class="carrusel-item">
+          <img src="../img/psn/1.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/psn/2.jfif" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/psn/3.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/psn/4.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/psn/5.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/psn/6.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/psn/7.jpg" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/psn/godofwar.png" alt="" />
+        </div>
+        <div class="carrusel-item">
+          <img src="../img/psn/lastus.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/1.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/2.jfif" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/3.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/4.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/5.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/6.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/7.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/godofwar.png" alt="" />
+        <div>
+          <a href="pago-psn.html"><input type="button" value="Comprar" /></a>
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/lastus.jpg" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/8.jfif" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+      <section class="container-info" onclick="llamarModal()">
+        <img src="../img/psn/9.jfif" alt="" />
+        <div>
+          <input type="button" value="Comprar" />
+        </div>
+      </section>
+    </main>
+
+    <footer id="foo">
+      <div class="footer-container">
+        <div class="content-foo">
+          <h4>Congratulation</h4>
+          <p>Post Malon</p>
+        </div>
+        <div class="content-foo">
+          <h4>Smoth Criminal</h4>
+          <p>Michael Jackson</p>
+        </div>
+        <div class="content-foo">
+          <h4>Chlorine</h4>
+          <p>Twenty One Pistols</p>
+        </div>
+      </div>
+      <h2 class="titulo-final">
+        &copy; Instituto Tecnologico Superior del Sur de Guanajuato
+      </h2>
+    </footer>
+
+    <script src="../javascript/inicioSesion.js"></script>
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e15c8d3476.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

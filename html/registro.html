@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/style_registro.css">
+    <link rel="icon" href="../img/blanco.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../javascript/inicioSesion.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <main class="container">
+        <div class="container-sesion">
+            <h1 class="titulo">Registra tus datos</h1>
+            <div class="img"></div>
+            <form
+            action="../php/insertar.php"
+            method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" placeholder="Ingresa tus apellidos" id="apellidos" name="apellidos">
+                <label for="correo">Correo </label> 
+                <input type="text" placeholder="Ingresa tu correo" id="correo" name="correo">
+                <label for="telefono">Telefono</label>    
+                <input type="text" placeholder="Ingresa tu telefono" id="telefono" name="telefono">
+                <label for="usuario">Usuario</label>
+                <input type="text" placeholder="Ingresa tu usuario" id="usr" name="usr"> 
+                <label for="contraseña">Contraseña</label>
+                <input type="password" placeholder="Ingresa tu contraseña nueva" id="pass" name="pass">
+                <input type="submit" value="Registrar"> <!-- onclick="registro()" -->
+            </form>
+            <div class="cuenta">
+                <a href="inicioSesion.html">Ya tienes cuenta</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

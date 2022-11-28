@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pago Xbox</title>
+
+    <link rel="stylesheet" href="../css/style_pago.css" />
+    <link rel="icon" href="../img/blanco.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="inicioSesion.html"
+      ><h3 class="inicio" id="inicio">Iniciar Sesion</h3></a
+    >
+    <input
+      type="button"
+      value="Cerrar Sesion"
+      onclick="cerrar()"
+      class="cerrarSesion"
+      id="cerrarSesion"
+    />
+    <header id="header-container">
+      <nav>
+        <a href="index.html" class="navegador">
+          Tienda
+          <i class="fa-solid fa-house-user"></i>
+        </a>
+        <a href="xbox.html" class="navegador">
+          Juegos XBOX
+          <i class="fa-brands fa-xbox"></i>
+        </a>
+        <a href="psn.html" class="navegador">
+          Juegos PSN
+          <i class="fa-brands fa-playstation"></i>
+        </a>
+        <a href="nintendo.html" class="navegador">
+          Nintendo
+          <i class="fa-solid fa-gamepad"></i>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="content-img">
+          <img src="../img/xbox/halo_infinite.jpg" alt="" />
+        </div>
+        <div class="content-info">
+          <h1>TITULO DEL JUEGO</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            debitis iste similique temporibus excepturi incidunt modi adipisci
+            alias aut quisquam veritatis, ut, ducimus, enim eius dolore fugiat
+            asperiores dignissimos fugit.
+          </p>
+          <footer>
+            <img src="../img/edad.png" alt="" />
+            <h3>CLASIFICACION DEL JUEGO</h3>
+          </footer>
+        </div>
+        <div class="content-buy">
+          <h3>$$$</h3>
+          <input type="button" value="COMPRAR" />
+        </div>
+      </div>
+    </main>
+
+    <script src="../javascript/inicioSesion.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e15c8d3476.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
